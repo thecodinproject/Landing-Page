@@ -7,9 +7,7 @@ body {
     height: 100vh;
     width: 80%;
     margin: auto;
-    overflow: hidden;
-    
-
+    overflow: auto;
 }
 
 /* make all containers flexboxes */
@@ -19,10 +17,14 @@ body {
 
 .header {
     justify-content: space-between;
-    margin-top: 24px;
+    padding-top: 25px;
 }
 .header-logo {
     font-size: 24px;
+}
+
+.hero {
+    padding-top: 50px; padding-bottom: 50px;
 }
 
 .hero-text {
@@ -49,12 +51,78 @@ body {
     margin: 0;
 }
 
-.header-link{
+.header-links{
     gap:25px;
 }
 
-#sign-up, #call-to-action {
+.lower {
+    flex-direction: column;
+    background-color: aliceblue;
+    gap: 50px;
+    padding-left: 100%; padding-right: 100%;
+    margin-left: -100%; margin-right: -100%;
+}
+
+.info {
+    flex-direction: column;
+    align-items: center;
+    color: #1F2937;
+}
+
+.info-images{
+    gap: 25px;
+}
+
+.imgtxt{
+    max-width: 256px;
+}
+
+.quote {
+    background-color:rgba(169, 215, 255, 0.32);
+    flex-direction: column;
+    padding-left: 105%; padding-right: 105%;
+    margin-left: -100%; margin-right: -100%;
+    padding-top: 50px; padding-bottom: 50px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin-top: 0px; margin-bottom: 0px;
+}
+
+.quoted {
+    color: #1F2937;
+    text-align: right;
+    font-weight: bold;
+}
+
+.sign-up, .call-to-action {
     background-color: #3882F6;
     color: #F9FAF8;
-    border: 10px, solid, #F9FAF8;
+}
+
+.call-to-action{
+    padding-top: 25px; padding-bottom: 25px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.call-main {
+    font-weight: bold;
+}
+
+.sign-up {
+    min-width: 128px; max-width: 128px;
+    padding: 6px;
+}
+
+.round-corners {
+    border-radius: 6px;
+}
+
+.footer {
+    align-self: center;
+    padding: 25px;
 }
